@@ -1,9 +1,4 @@
-// Place all the styles related to the pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
-/*******************************/
-/********* General CSS *********/
-/*******************************/
+// Specific CSS for your home-page
 body {
   color: #797979;
   background: #ffffff;
@@ -107,61 +102,6 @@ a:focus {
 }
 
 
-/**********************************/
-/*********** Nav Bar CSS **********/
-/**********************************/
-@-webkit-keyframes action {
-  0% {
-      transform: translateY(0);
-  }
-
-  100% {
-      transform: translateY(-15px);
-  }
-}
-
-@keyframes action {
-  0% {
-      transform: translateY(0);
-  }
-
-  100% {
-      transform: translateY(-15px);
-  }
-}
-
-.navbar-light {
-  display: none;
-}
-
-.navbar-light .navbar-nav .nav-link {
-  padding: 25px 10px;
-  color: #343a40;
-  font-weight: 500;
-  outline: none;
-}
-
-.navbar-light .navbar-nav .nav-link:hover,
-.navbar-light .navbar-nav .nav-link.active {
-  color: blue;
-}
-
-@media (max-width: 991.98px) {
-  .navbar-light .navbar-nav .nav-link {
-      padding: 10px 0;
-  }
-}
-@keyframes pulse-border {
-  0% {
-      transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
-      opacity: 1;
-  }
-
-  100% {
-      transform: translateX(-50%) translateY(-50%) translateZ(0) scale(2);
-      opacity: 0;
-  }
-}
 
 /*******************************/
 /********** Hero CSS ***********/
@@ -668,7 +608,7 @@ border-color: transparent #dddddd transparent transparent;
   display: flex;
   align-items: center;
   box-shadow: inset 0 0 0 0 transparent;
-  transition: ease-out 0.5s;
+
 
 }
 
@@ -721,7 +661,7 @@ border-color: transparent #dddddd transparent transparent;
 
 .service .service-item:hover .service-text h3,
 .service .service-item:hover .service-text p {
-  color: #ffffff;
+  color: #2e2c2c;
 }
 
 @media (max-width: 575.98px) {
@@ -1161,4 +1101,25 @@ border-color: transparent #dddddd transparent transparent;
 
 .footer-social a:hover i {
   color: #414141;
+}
+
+
+.typewriter_two  {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid rgb(211, 210, 209); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+
+  animation:
+    typing 5.5s steps(40, end), infinite, blink-caret .5s step-end infinite;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(214, 214, 214); }
 }

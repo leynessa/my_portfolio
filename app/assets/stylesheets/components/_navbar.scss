@@ -1,0 +1,75 @@
+/**********************************/
+/*********** Nav Bar CSS **********/
+/**********************************/
+@-webkit-keyframes action {
+  0% {
+      transform: translateY(0);
+  }
+
+  100% {
+      transform: translateY(-15px);
+  }
+}
+
+@keyframes action {
+  0% {
+      transform: translateY(0);
+  }
+
+  100% {
+      transform: translateY(-15px);
+  }
+}
+
+.navbar-white {
+  background-color: white;
+}
+.navbar-port {
+  background-color: white;
+  transition: 0.5s background-color ease;
+}
+@-webkit-keyframes action {
+  0% {
+      transform: translateY(0);
+  }
+
+  100% {
+      transform: translateY(-15px);
+  }
+}
+
+@keyframes action {
+  0% {
+      transform: translateY(0);
+  }
+
+  100% {
+      transform: translateY(-15px);
+  }
+}
+navbar-light .navbar-nav .nav-link {
+  padding: 25px 10px;
+  color: #343a40;
+  font-weight: 500;
+  outline: none;
+}
+@media (max-width: 991.98px) {
+  .navbar-light .navbar-nav .nav-link {
+      padding: 10px 0;
+  }
+}
+@keyframes pulse-border {
+  0% {
+      transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+      opacity: 1;
+  }
+
+  100% {
+      transform: translateX(-50%) translateY(-50%) translateZ(0) scale(2);
+      opacity: 0;
+  }
+}
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+  color: blue;
+}

@@ -11,6 +11,10 @@ gem 'pg', '~> 1.1'
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
 gem 'simple_form', github: 'heartcombo/simple_form'
+gem "autoprefixer-rails", "10.2.5"
+gem "font-awesome-sass", "~> 5.6.1"
+gem "typedjs-rails", "~> 2.0.9"
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 6'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker

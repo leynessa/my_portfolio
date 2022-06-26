@@ -18,14 +18,14 @@
 
 
 
-<body data-spy="scroll" data-target=".navbar" data-offset="51">
+<body data-spy="scroll" data-target=".navbar" data-offset="51" >
         <!-- Nav Bar Start -->
-        <div class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
+        <div class="navbar fixed-top navbar-expand-sm navbar-light navbar-port py-3 py-lg-0 px-lg-5 " data-controller="navbar" data-action="scroll@window->navbar#updateNavbar">
             <div class="container-fluid">
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
- <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
+ <div class="navbar-collapse px-lg-3" id="navbarSupportedContent"  >
             <div class="navbar-nav m-auto py-0">
                         <a href="#home" class="nav-item nav-link active">Home</a>
                         <a href="#about" class="nav-item nav-link">About</a>
@@ -47,9 +47,13 @@
                     <div class="col-sm-12 col-md-6">
                         <div class="hero-content">
                             <div class="hero-text">
-                                <p>I'm</p>
+                                <p>
+
+                                  <span data-controller="typed-js"></span>
+                                </p>
+                                <p class = >I'm</p>
                                 <h1>Ashley Williams</h1>
-                                <p>I am a full-stack web developer</p>
+                                <p class = "typewriter_two">I am a full-stack web developer</p>
                                 <div class="typed-text"> Web Developer</div>
                             </div>
                             <div class="hero-btn">
@@ -81,6 +85,7 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="about-content">
+
                             <div class="section-header text-left">
                                 <h2>A little about me</h2>
                             </div>
@@ -112,7 +117,7 @@
                     <h2>My Projects</h2>
                 </div>
                 <div class="row">
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="col-lg-6 wow  fadeInUp" data-wow-delay="0.2s">
                         <div class="service-item">
                             <div class="service-icon">
                                  <%= image_tag("staysafe.png", :alt => "staysafe",:class => "staysafe") %>
