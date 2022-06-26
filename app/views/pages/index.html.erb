@@ -1,0 +1,320 @@
+<head>
+        <meta charset="utf-8">
+        <title>Ashley Williams- Full-stack Developer</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Free Website Template" name="keywords">
+        <meta content="Free Website Template" name="description">
+
+        <!-- Favicon -->
+        <link href="images/favicon.ico" rel="icon">
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+
+
+
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+        <!-- Nav Bar Start -->
+        <div class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
+            <div class="container-fluid">
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+ <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
+            <div class="navbar-nav m-auto py-0">
+                        <a href="#home" class="nav-item nav-link active">Home</a>
+                        <a href="#about" class="nav-item nav-link">About</a>
+                        <a href="#service" class="nav-item nav-link">Projects</a>
+                        <a href="#experience" class="nav-item nav-link">Education</a>
+                        <a href="#portfolio" class="nav-item nav-link">Technologies</a>
+                        <a href="#contact" class="nav-item nav-link">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Nav Bar End -->
+
+
+        <!-- Hero Start -->
+        <div class="hero" id="home">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="hero-content">
+                            <div class="hero-text">
+                                <p>I'm</p>
+                                <h1>Ashley Williams</h1>
+                                <p>I am a full-stack web developer</p>
+                                <div class="typed-text"> Web Developer</div>
+                            </div>
+                            <div class="hero-btn">
+                                <a class="btn" href="https://www.linkedin.com/in/ashleyvanessawilliams/" target="_blank">Contact Me</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 d-none d-md-block">
+                        <div class="hero-image ">
+                        <%= image_tag("mee.png", :alt => "profile", :class => "img-fluid w-100 rounded-circle shadow-sm" ) %>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hero End -->
+
+
+        <!-- About Start -->
+        <div class="about wow fadeInUp" data-wow-delay="0.1s" id="about">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="about-img">
+                            <%= image_tag("undraw_programmer_re_owql_preview_rev_1.png", :alt => "about", :class => "img-fluid w-100 rounded-circle shadow-sm") %>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-content">
+                            <div class="section-header text-left">
+                                <h2>A little about me</h2>
+                            </div>
+                            <div class="about-text">
+                                <p>
+                                  Full-Stack Web Developer with a nontraditional background focusing on modern technologies. I am originally from Jamaica.
+                                   I studied medicine in Brazil. In my final year of medical school I started learning how to program simple solution for my daily routine in health systems and fell inlove.
+                                   After completing medical school I enrollled in the Le Wagon full-stack Web development course, where i learnt Ruby on rails, Javascript,
+                                   Git & GitHub in just six months. My love for programming grew stronger during this time.
+                                  I love learning new programming languages and building applications to help people. I am currently learning React. Active in both in-person meetups and online communities. Eager to find a developer role in a company that could use my skills and enthusiasm.
+                                </p>
+                            </div>
+                            </div>
+                            <a class="btn" href="https://www.linkedin.com/in/ashleyvanessawilliams/" target="_blank">Let´s make something great!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+
+        <!-- Service Start -->
+        <div class="box">
+        <div class="service" id="service">
+            <div class="container">
+                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                    <p>What I do</p>
+                    <h2>My Projects</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                 <%= image_tag("staysafe.png", :alt => "staysafe",:class => "staysafe") %>
+                            </div>
+                            <div class="service-text">
+                                <h3>StaySafe</h3>
+                                <p >
+                                   This was a group collaboration of a website that help you keep safe in Rio de Janeiro by showing you danger zones in your area. <br>
+                                   I acted as the project manager for this project and contributed to the development of the backend and frontend of the project <br>
+                                  <%= link_to "Website", "https://www.staysaferio.me/", target: "_blank", rel: "alternate" %>
+                                  | <%= link_to "figma", "https://www.figma.com/proto/JmuMpPyRsd1QG4pms9ic02/STAYSAFE--web%2B-App?node-id=132%3A947&scaling=scale-down&page-id=129%3A945", target: "_blank", rel: "alternate" %>
+                                 </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <%= image_tag("candle.png", :alt => "candle",:class => "candle") %>
+                            </div>
+                            <div class="service-text">
+                                <h3>The Candle Shop</h3>
+                                <p>
+                                    Group collaboration of an online store that sells candles <br>
+                                    <%= link_to "Website", "https://aja-candles-candles.herokuapp.com/", target: "_blank", rel: "alternate" %>
+                                  | <%= link_to "figma", "https://www.figma.com/proto/XYlIQLTEeuMJYYMr8kU76v/The-Candle-Shop?node-id=4%3A2&scaling=min-zoom&page-id=0%3A1", target: "_blank", rel: "alternate" %>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <%= image_tag("spotify_icon.png", :alt => "spotify",:class => "spotify",) %>
+                            </div>
+                            <div class="service-text">
+                                <h3>Figme: Spotify clone</h3>
+                                <p>
+                                    Develop professional and scalable IU interfaces for mobile and desktop. <br>
+                                <%= link_to "figma", "https://www.figma.com/proto/6nioJnAmocdIjtwnXBgjaD/spotify-prototype?node-id=2%3A2&scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A2&show-proto-sidebar=1", target: "_blank", rel: "alternate" %>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <%= image_tag("brand_icon.png", :alt => "brand",:class => "brand",) %>
+                            </div>
+                            <div class="service-text">
+                                <h3>Figma: StaySafe</h3>
+                                <p>
+                                 I create an outline of the project using figma before the project was start so the our group could discuss the final outcomes. <br>
+                                   <%= link_to "figma", "https://www.figma.com/proto/JmuMpPyRsd1QG4pms9ic02/STAYSAFE--web%2B-App?node-id=132%3A947&scaling=scale-down&page-id=129%3A945", target: "_blank", rel: "alternate" %>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </div>
+        <!-- Service End -->
+
+
+         <!-- Experience Start -->
+         <div class="box">
+        <div class="experience" id="experience">
+            <div class="container">
+                <header class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                    <p>My Resume</p>
+                    <h2>Education</h2>
+                </header>
+                <div class="timeline">
+                    <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+                        <div class="timeline-text">
+                            <div class="timeline-date">2022 </div>
+                            <h2>Full-stack Web Developement</h2>
+                            <h4>Le Wagon, Rio de Janeiro, Brazil</h4>
+                            <p>
+                                24-week intensive coding Bootcamp learning HTML, CSS, Bootstrap, JavaScript ES6, SQL, git, GitHub, Heroku, and Ruby on Rails. Designed, implemented, and shipped to production
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
+                        <div class="timeline-text">
+                            <div class="timeline-date">2022</div>
+                            <h2>Certificate: 50 Projects In 50 Days - HTML, CSS & JavaScript</h2>
+                            <h4>Project based teaching to sharpen your HTML, CSS & JavaScript skills</h4>
+                            <h5>Udemy course taught by Brad Traversy</h5>
+                            <p>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+                        <div class="timeline-text">
+                            <div class="timeline-date">2022</div>
+                            <h2>Certificate: Figma Design de interfaces do zero ao profissional </h2>
+                            <h4> Develop professional and scalable IU interfaces formobile and desktop. </h4>
+                            <h5>Udemy course taught by Matheus Fraga</h5>
+                        </div>
+                    </div>
+                    <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
+                        <div class="timeline-text">
+                            <div class="timeline-date">2021</div>
+                            <h2>DOCTOR OF MEDICINE</h2>
+                            <h4>The Federal Universit of the State of Rio de Janeiro</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- Job Experience End -->
+
+
+        <!-- Banner Start -->
+        <div class="banner wow zoomIn" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h3 class = "title">Mantra</h3>
+
+                </div>
+                <div class="container banner-text">
+                    <p>
+                        "A dream does not become reality through magic; it takes sweat, determination, and hard work."
+                    </p>
+                    <a class="btn">contact me</a>
+                </div>
+            </div>
+        </div>
+        <!-- Banner End -->
+
+
+        <!-- Portfolio Start -->
+        <div class="portfolio" id="portfolio">
+            <div class="container">
+                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                    <p>My Technologies</p>
+                    <h2>I have experience in</h2>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <ul id="portfolio-filter">
+
+
+                            <li data-filter=".filter-1"> <%= image_tag("rails_icon.png", :alt => "rails", :height => "30px" ) %>Ruby on Rails</li>
+                            <li data-filter=".filter-2"><%= image_tag("javascript_icon.png", :alt => "javascript", :height => "30px" ) %>Javascript</li>
+                            <li data-filter=".filter-3"> <%= image_tag("javascript_icon.png", :alt => "html", :height => "30px" ) %>HTML</li>
+                            <li data-filter=".filter-3"><%= image_tag("css_icon.png", :alt => "css", :height => "30px" ) %>CSS</li>
+                            <li data-filter=".filter-3"><%= image_tag("figma_icon.png", :alt => "figma", :height => "30px" ) %>Figma</li>
+                            <li data-filter=".filter-3"><%= image_tag("git_icon.png", :alt => "git", :height => "30px" ) %>Git</li>
+                            <li data-filter=".filter-3"><%= image_tag("github_icon.png", :alt => "github", :height => "30px" ) %>GitHub</li>
+                            <li data-filter=".filter-3"><%= image_tag("bootstrap_icon.png", :alt => "bootstrap", :height => "30px" ) %>Bootstrap</li>
+                            <li data-filter=".filter-3"><%= image_tag("sql_icon.png", :alt => "postreSQL", :height => "30px" ) %>postreSQL</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio End -->
+
+
+
+
+
+        <!-- Contact Start -->
+        <div class="contact wow fadeInUp" data-wow-delay="0.1s" id="contact">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-4"></div>
+                        <div class="col-md-8">
+                            <div class="contact-form">
+                                <div id="success"></div>
+                                <h3 class = "title">Contact me </h3>
+
+                              <div class="footer-social">
+                            <a href="mailto:leynessa1@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
+                            <a href="https://github.com/leynessa" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/ashleyvanessawilliams/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact End -->
+
+
+
+
+        <!-- Back to top button -->
+        <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+
+
+
+
+
+    </body>
