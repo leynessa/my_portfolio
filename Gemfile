@@ -13,7 +13,7 @@ gem 'puma', '~> 5.0'
 gem 'simple_form', github: 'heartcombo/simple_form'
 gem "autoprefixer-rails", "10.2.5"
 gem "font-awesome-sass", "~> 5.6.1"
-
+gem "serviceworker-rails"
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 6'
